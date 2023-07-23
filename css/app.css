@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #062d45;
+    font-size: 14px;
+}
+
+#main-box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#dian-box {
+    width: 660px;
+    height: 660px;
+    display: grid;
+    grid-template-columns: repeat(30, 2fr);
+    grid-template-rows: repeat(30, 2fr);
+    padding: 5px;
+    background: #062d45;
+    border-radius: 5px;
+}
+
+.dian {
+    width: 21px;
+    height: 21px;
+    background-color: #ffffff38;
+    border-radius: 5px;
+    border: solid 1px #062d45;
+}
+
+.dian:hover {
+    box-shadow: inset #ffffff8f 0 0 0px 2px;
+    border: none;
+}
+
+.color-dian {
+    width: 21px;
+    height: 21px;
+    border-radius: 5px;
+    margin: 1px;
+}
+
+#colors {
+    display: grid;
+    grid-template-columns: repeat(12, 2fr);
+}
+
+div#info {
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #b33;
+}
+
+div#colors {
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(to right, #595959, #ddd);
+    box-shadow: #00000057 0px 0px 12px 7px;
+}
+
+.changeback button {
+    background: #ff5757;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 22px;
+    border: none;
+    box-shadow: #a35cff 3px 2px 1px;
+}
+
+div#hb {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+textarea.datatext {
+    width: 600px;
+    height: 400px;
+    resize: none;
+}
+
+div#outin {
+    display: flex;
+    flex-direction: row;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+}
+.text button {
+    height: 2rem;
+    font-size: 1.25rem;
+    border: solid 1px #000;
+    background-color: #169aa7;
+    color: #fff;
+}
