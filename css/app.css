@@ -38,8 +38,8 @@ body {
     border: solid 1px #062d45;
 }
 
-.dian:hover {
-    box-shadow: inset #ffffff8f 0 0 0px 2px;
+.dian:hover,.color-dian:hover {
+    box-shadow: inset #fff 0 0 0px 2px;
     border: none;
 }
 
