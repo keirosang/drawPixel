@@ -8,6 +8,12 @@ let DianColor = "#000000";
 
 Color.innerHTML = DianColor;
 
+const textareaElements = document.querySelectorAll('.datatext');
+textareaHeight = document.body.clientHeight - 660 - 100;
+textareaElements.forEach(textareaE => {
+    textareaE.style.height = he + "px";
+});
+
 function createDianElement() {
     const Dian = document.createElement("div");
     Dian.className = "dian";
