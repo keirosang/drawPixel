@@ -151,7 +151,7 @@ const InputButton = document.getElementById("input-button");
 const Input = document.getElementById("input");
 InputButton.addEventListener("click", function () {
     if (Input.value === "") {
-        alert("输入框不能为空！");
+        alert(inputAlertnull[language]);
     } else {
         try {
             const matrixData = JSON.parse(Input.value);
@@ -175,7 +175,7 @@ InputButton.addEventListener("click", function () {
                 }
             }
         } catch (error) {
-            alert("输入的数据不是合法的矩阵数据！");
+            alert(inputAlerterror[language]);
         }
     }
 });
@@ -189,10 +189,10 @@ OutputButton.addEventListener("click", function () {
         // 使用Clipboard API的writeText方法复制到剪贴板
         navigator.clipboard.writeText(Output.value)
             .then(() => {
-                alert('已成功复制到剪贴板！');
+                alert(outputAlert[language]);
             })
             .catch((err) => {
-                console.error('复制失败:', err);
+                console.error(outputAlerterror[language], err);
             });
     } else {
         // 如果浏览器不支持Clipboard API，回退到execCommand方法
@@ -246,7 +246,7 @@ function fallbackCopyToClipboard(textToCopy) {
     textArea.select();
     document.execCommand('copy');
     document.body.removeChild(textArea);
-    alert('已成功复制到剪贴板！');
+    alert(outputAlert[language]);
 }
 
 // 监听鼠标悬停事件，显示.dian元素的x和y坐标(x: 1-30, y: 1-30)
