@@ -227,9 +227,6 @@ DownloadButton.addEventListener("click", function () {
         // 设置图片的src为DataURL
         image.src = dataURL;
 
-        // 可以将图片插入到页面中显示
-        // document.body.appendChild(image);
-
         // 如果需要将图片保存到本地，可以创建一个a标签来模拟点击下载
         const link = document.createElement('a');
         // 获取当前时间戳
@@ -237,11 +234,6 @@ DownloadButton.addEventListener("click", function () {
         link.download = timestamp + 'output.png';
         link.href = dataURL;
         link.click();
-        // 将所有的img标签在页面中隐藏
-        // image.style.display = 'none';
-        // 将所有img标签从页面中删除
-        // document.body.removeChild(image);
-        // 施放内存
         image = null;
     });
 });
