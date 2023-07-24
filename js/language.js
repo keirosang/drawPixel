@@ -1,11 +1,13 @@
 // 判断语言
 const lang = navigator.language || navigator.userLanguage;
+// 设置默认语言为英语
+let language = "en";
 // 设置语言
-if (lang === "zh-CN" || lang === "zh-cn") {
-    language = "cn";
-} else {
-    language = "en";
-}
+// if (lang === "zh-CN" || lang === "zh-cn") {
+//     language = "cn";
+// } else {
+//     language = "en";
+// }
 
 // 设置title
 const title = {"cn":"像素画板","en":"Pixel Sketchpad"};
