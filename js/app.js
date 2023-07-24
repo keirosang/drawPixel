@@ -11,7 +11,7 @@ Color.innerHTML = DianColor;
 const textareaElements = document.querySelectorAll('.datatext');
 textareaHeight = document.body.clientHeight - 660 - 100;
 textareaElements.forEach(textareaE => {
-    textareaE.style.height = he + "px";
+    textareaE.style.height = textareaHeight + "px";
 });
 
 function createDianElement() {
