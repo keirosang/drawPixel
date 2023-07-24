@@ -1,5 +1,3 @@
-import { setLanguage, inputAlertnull, inputAlerterror, outputAlert, outputAlerterror } from "./language.js";
-
 const DianBox = document.getElementById("dian-box");
 const ChangeDefault = document.getElementById("changedefault");
 const ChangeBack = document.getElementById("changeback");
