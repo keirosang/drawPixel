@@ -103,6 +103,9 @@ ChangeDefault.addEventListener("click", resetDianGrid);
 ChangeBack.addEventListener("click", changeBodyBackground);
 DianBox.addEventListener("click", changeDianBackground);
 
+
+// 初始化语言
+setLanguage();
 // 初始化取色器
 addColor();
 
@@ -259,4 +262,15 @@ DianBox.addEventListener("mouseover", function (event) {
         const coordinateElement = document.getElementById("coordinate");
         coordinateElement.innerText = coordinate;
     }
+});
+
+// 切换语言
+const languageSelect = document.getElementById("language-change-button");
+languageSelect.addEventListener("click", function () {
+    if (language === "cn") {
+        language = "en";
+    } else {
+        language = "cn";
+    }
+    setLanguage();
 });
